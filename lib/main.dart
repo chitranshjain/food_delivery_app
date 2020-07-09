@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
           headline: TextStyle(fontWeight: FontWeight.bold),
           button: TextStyle(fontWeight: FontWeight.bold),
           title: TextStyle(fontWeight: FontWeight.bold),
+          body1: TextStyle(color: kTextColor),
         ),
       ),
       home: HomeScreen(),
