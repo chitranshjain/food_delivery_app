@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fooddeliveryapp/contants.dart';
+import 'package:fooddeliveryapp/detailedscreen.dart';
 
 import 'Widgets/category_title.dart';
 import 'Widgets/food_card.dart';
@@ -182,6 +183,23 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Row(
               children: <Widget>[
                 FoodCard(
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return DetailedScreen(
+                            title: 'Vegan Salad Bowl',
+                            ingredient: 'Red Tomato',
+                            price: 20,
+                            desc:
+                                'This is a dummy text. It will contain the description of the food which will be provided by the app owner or the chef.',
+                            image: 'assets/images/image_1.png',
+                          );
+                        },
+                      ),
+                    );
+                  },
                   title: 'Vegan Salad Bowl',
                   ingredient: 'Red Tomato',
                   price: 20,
@@ -190,14 +208,48 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: 'assets/images/image_1.png',
                 ),
                 FoodCard(
-                  title: 'Vegan Salad Bowl',
-                  ingredient: 'Red Tomato',
-                  price: 20,
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return DetailedScreen(
+                            title: 'Non - Vegan Salad Bowl',
+                            ingredient: 'Red Chillies',
+                            price: 30,
+                            desc:
+                                'This is a dummy text. It will contain the description of the food which will be provided by the app owner or the chef.',
+                            image: 'assets/images/image_2.png',
+                          );
+                        },
+                      ),
+                    );
+                  },
+                  title: 'Non - Vegan Salad Bowl',
+                  ingredient: 'Red Chillies',
+                  price: 30,
                   desc:
                       'This is a dummy text. It will contain the description of the food which will be provided by the app owner or the chef.',
                   image: 'assets/images/image_2.png',
                 ),
                 FoodCard(
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return DetailedScreen(
+                            title: 'Vegan Salad Bowl',
+                            ingredient: 'Red Tomato',
+                            price: 20,
+                            desc:
+                                'This is a dummy text. It will contain the description of the food which will be provided by the app owner or the chef.',
+                            image: 'assets/images/image_1.png',
+                          );
+                        },
+                      ),
+                    );
+                  },
                   title: 'Vegan Salad Bowl',
                   ingredient: 'Red Tomato',
                   price: 20,
@@ -206,9 +258,26 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: 'assets/images/image_1.png',
                 ),
                 FoodCard(
-                  title: 'Vegan Salad Bowl',
-                  ingredient: 'Red Tomato',
-                  price: 20,
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return DetailedScreen(
+                            title: 'Non - Vegan Salad Bowl',
+                            ingredient: 'Red Chillies',
+                            price: 30,
+                            desc:
+                                'This is a dummy text. It will contain the description of the food which will be provided by the app owner or the chef.',
+                            image: 'assets/images/image_2.png',
+                          );
+                        },
+                      ),
+                    );
+                  },
+                  title: 'Non - Vegan Salad Bowl',
+                  ingredient: 'Red Chillies',
+                  price: 30,
                   desc:
                       'This is a dummy text. It will contain the description of the food which will be provided by the app owner or the chef.',
                   image: 'assets/images/image_2.png',
